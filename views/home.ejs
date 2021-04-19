@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+    <%- include('partials/head') %>
+
+<body>
+
+    <%- include('partials/header') %>
+
+   
+    <section class="section-banner">
+        <img class="banner" src="/img/img-home-banner.jpg" alt="Banner de ofertas">
+    </section>
+    <main>
+        <section>
+            <h3>Basado en tu última visita</h3>
+            <% products.forEach(product => { %>
+                <%- include('partials/product', { product }) %>
+            <% })%>
+        </section>
+
+        <section>
+            <h3>Ofertas</h3>
+                    <% products.forEach(product => { %>
+                        <%- include('partials/product', { product }) %>
+                    <% })%>
+
+        </section>
+    </main>
+    <%- include('partials/footer') %>
+
+
+</html>

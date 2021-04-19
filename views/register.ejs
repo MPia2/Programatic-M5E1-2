@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <%- include('partials/head') %>
+    
+    <body>
+        <%- include('partials/header') %>
+        <main class="formMain">
+            <form class="register" action="/register" method="POST">
+                <input type="text" name="nombre" placeholder="Nombre y apellido" required minlength="2">
+                <input type="text" name="usuario" placeholder="Nombre de usuario" required minlength="4">
+                <input type="email" name="email" placeholder="E-mail" required>
+               
+                <div class="date">
+                    <label class="subtitle" for="date">Fecha de Nacimiento</label>
+                    <input type="date" name="date" id="date" required>
+                </div>
+
+                <input type="text" name="domicilio" placeholder="Domicilio" required minlength="4">
+
+                <div class="perfilUsuario">
+                    <label class="subtitle" for="perfil">Perfil de usuario</label>
+                    <div class="comprador">
+                        <input type="radio" name="perfilUsuario" id="perfil" value="Vendedor" checked><label for="perfil">Comprador</label>
+                    </div>
+                    <div class="vendedor">
+                        <input type="radio" name="perfilUsuario" id="perfil" value="Comprador"><label for="perfil">Vendedor</label>
+                    </div>
+                </div>
+
+                <div class="intereses">
+                    <label class="subtitle" for="intereses">Intereses</label>
+                    <div class="electro">
+                        <input type="checkbox" name="intereses" value="electro"> 
+                        <label for="intereses">Electro</label>
+                    </div>
+    
+                    <div class="moda">
+                        <input type="checkbox" name="intereses" value="moda"> 
+                        <label for="intereses">Moda</label>
+                    </div>
+                    
+                    <div class="hogar">
+                        <input type="checkbox" name="intereses" value="hogar"> 
+                        <label for="intereses">Hogar</label>
+                    </div>
+
+    
+                    <div class="jugueteria">
+                        <input type="checkbox" name="intereses" value="jugueteria"> 
+                        <label for="intereses">Juguetería</label>
+                    </div>
+                    
+                    <div class="vida-sana">
+                        <input type="checkbox" name="intereses" value="vida-sana"> 
+                        <label for="intereses">Vida Sana</label>
+                    </div>
+
+                <div class="imagenPerfil">
+                    <label for="archivo">Seleccionar imagen de perfil:</label>
+                    <input type="file" name="archivo" accept=".jpg" required>
+                </div>
+
+                <input type="password" name="clave" id="password" placeholder="Contraseña" required minlength="8">
+                <input type="password" name="clave2" id="password2" placeholder="Confirmar contraseña" required minlength="8">
+
+                <div class="buttons">
+                    <button type="submit"><a href="/">Enviar</a></button>
+                    <button type="reset">Borrar</button>
+                </div>
+
+            </form> 
+        </main>
+        <%- include('partials/footer') %>
+     
+        </html>

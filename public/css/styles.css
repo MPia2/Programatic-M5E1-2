@@ -1,0 +1,446 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    background-color: #ebebeb;
+}
+
+
+/*HEADER*/
+
+.header {
+    width: 100%;
+    background-color: #EAC926;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    min-height: 173.9px;
+}
+
+header .logo-search {
+    display: flex;
+    padding: 25px;
+    align-items: center;
+}
+
+header img {
+    width: 50%;
+}
+
+header .buscador{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+header .buscador input {
+    padding: 5px;
+    height: 35px;
+    width: 80%;
+    border: 0;
+    border-radius: 5px 0 0 5px;
+}
+
+header .hamburguer {
+    text-align: center;
+}
+
+header .buscador button {
+    border: 0px #fff;
+    background-color: #fff;
+    border-radius: 0 5px 5px 0;
+    color: #666;
+    padding: 2px;
+}
+
+header p {
+    text-align: center;
+}
+
+header .main-navbar {
+    display: flex;
+    justify-content: center;
+}
+
+header .site-navbar,
+header .login-navbar {
+    display: none;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav div button {
+    background-color:#1259c3;;
+    border-radius: 5px;
+    height: 35px;
+    width: 35px;
+    border: none;
+    margin: 15px 0 20px 0;
+    line-height: 0;
+}
+
+header nav div button i {
+    color: #fff;
+    font-size: 16px;
+}
+
+/*  BANNER */
+
+
+.section-banner{
+    margin-top: 173.9px;
+} 
+.banner {
+    width: 100vw;
+}
+
+
+/*  MAIN */
+
+main {
+    width: 90vw;
+    margin: auto;
+}
+
+main img {
+    width: 100%;
+}
+
+main section h3 {
+    font-size: 24px;
+    color: #666;
+    margin: 15px 0 15px 0;
+}
+
+main section article {
+    background-color: #fff;
+    margin: 10px;
+}
+
+main .caracteristicasArticulo {
+    border-top: solid 1px #ebebeb;
+    padding: 15px;
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+main section article p {
+    font-size: 16px;
+    margin: 0;
+}
+
+main section article i {
+    color: #39b54a;
+    display: block;
+    padding: 7px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+
+main .precio {
+    font-size: 18px;
+    flex: 1 1 30%;
+}
+
+main .descuento {
+    color: #39b54a;
+    flex: 1 1 70%;
+}
+
+main h4 {
+    font-size: 16px;
+    margin: 0;
+    color: #666;
+    font-weight: 400;
+    height: 0;
+    opacity: 0;
+    flex: 1 1 100%;
+    transition: all 300ms;
+}
+
+/* REGISTER */
+
+.formMain{
+    margin-top: 180px;
+}
+main form{
+    display: flex;
+    flex-flow: column wrap;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+main form input {
+    border: none;
+    height: 40px;
+    margin: 10px 0 10px 0;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+main .subtitle {
+    font-weight: bold;
+    font-size: 16px;
+    margin: 5px 0 5px 0;
+}
+
+main form div {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+main .perfilUsuario {
+    flex-flow: row wrap;
+}
+
+main .subtitle {
+    flex: 1 1 100%;
+}
+
+main .comprador,
+main .vendedor{
+    flex-flow: row;
+    align-items: center;
+    flex: 1 1 30%;
+    margin-left: 15px;
+}
+main .electro,
+main .moda,
+main .hogar,
+main .jugueteria,
+main .vidasana {
+    flex-flow: row;
+    align-items: center;
+    margin-left: 20px;
+}
+
+main .perfilUsuario input,
+main .intereses input {
+    margin-right: 15px;
+}
+
+main .imagenPerfil label {
+    font-weight: bold;
+    font-size: 16px;
+    margin: 5px 0 5px 0;
+}
+
+main .imagenPerfil input {
+    border: none;
+    height: 28px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    margin-left: 0px;
+    flex: 1 0 auto;
+}
+
+main .buttons {
+    background-color: #03264C;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+main .buttons button a{
+    text-align: left;
+    flex: 1 0 auto;
+
+}
+
+
+
+/*LOGIN */
+
+
+.login input {
+    margin: 20px 0 20px 0;
+    width: 100%;
+}
+
+.login button {
+    border: none;
+    background-color: #1259c3;
+    border-radius: 5px;
+    height: 40px;
+    margin: 20px 0 20px 0;
+    width: 100%;
+}
+
+.login button:hover {
+    background-color: #0022AA;
+}
+
+.login button a{
+    text-decoration: none;
+    color: #fff;
+}
+
+
+/* FOOTER */
+
+footer {
+    background-color: #fff;
+    margin: auto;
+    width: 100%;
+    padding-top: 3px;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+footer .comentarioFooter {
+    flex: 1 1 33%;
+}
+
+footer .copyrightFooter{
+    flex: 1 1 100%;
+}
+
+footer section article {
+    margin-top: 50px;
+}
+
+footer h3 {
+    margin: 0;
+    color: #666;
+}
+
+footer h5 {
+    padding-bottom: 20px;
+}
+
+footer p {
+    margin: 0;
+    color: #666;
+}
+
+footer i {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #1259c3;
+}
+
+footer i:hover {
+    color: #0022AA;
+}
+
+footer article {
+    text-align: center;
+    padding: 0 50px 0 50px;
+}
+
+footer section article h5{
+    color: #666;
+    font-weight: lighter;
+}
+
+.copyright{
+    padding-left: 15px;
+    text-align: left;
+}
+
+/* MEDIAQUERIES  */
+
+@media (min-width: 361px) {
+
+    header {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+    }
+
+    header .logo-search {
+        flex: 1 1 50%;
+    }
+
+    header p {
+        flex: 1 1 30%;
+        text-align: left;
+    }
+
+    header .main-navbar {
+        flex: 1 1 100%;
+    }
+
+    header .main-navbar {
+        padding: 15px;
+        justify-content: space-between;
+    }
+
+    header .site-navbar,
+    header .login-navbar {
+    display: flex;
+    width: 40%;
+    }
+
+    header ul {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    header .hamburguer {
+        display: none;
+    }
+
+    header img {
+        width: 160px;
+    }
+
+    main section article:hover {
+        box-shadow: 0px 0px 10px 0px rgb(100, 100, 100);
+    }
+
+    main article:hover h4 {
+        display: block;
+        margin-top: 25px;
+        height:auto;
+        opacity: 1;
+    }
+
+    main section {
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    main h3 {
+        flex: 1 1 100%;
+    }
+
+    main section article {
+        flex: 1 1 40%;
+    }
+    /* ====/register==== */
+    main .comprador,
+    main .vendedor {
+        flex: none;
+    }
+
+    /* ====/login==== */
+    .login {
+        width: 70vw;
+        margin: auto;
+    }
+}
+
+@media (min-width: 769px) {
+    main section article {
+        flex: 1 1 20%;
+    }
+}
